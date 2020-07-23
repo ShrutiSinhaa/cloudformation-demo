@@ -6,7 +6,7 @@
   "Parameters" : {
 
     "KeyName": {
-      "Description" : "Name of an existing EC2 KeyPair to enable SSH access to the instances",
+      "Description" : "awsdemo",
       "Type": "AWS::EC2::KeyPair::KeyName",
       "ConstraintDescription" : "must be the name of an existing EC2 KeyPair."
     },
@@ -42,7 +42,7 @@
 
     "DBUser" : {
       "NoEcho": "true",
-      "Description" : "The WordPress database admin account username",
+      "Description" : "sqladmin",
       "Type": "String",
       "MinLength": "1",
       "MaxLength": "16",
@@ -52,7 +52,7 @@
 
     "DBPassword" : {
       "NoEcho": "true",
-      "Description" : "The WordPress database admin account password",
+      "Description" : "Password123",
       "Type": "String",
       "MinLength": "8",
       "MaxLength": "41",
@@ -62,7 +62,7 @@
 
     "DBRootPassword" : {
       "NoEcho": "true",
-      "Description" : "MySQL root password",
+      "Description" : "Password123",
       "Type": "String",
       "MinLength": "8",
       "MaxLength": "41",
